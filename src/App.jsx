@@ -7,6 +7,7 @@ import Footer from './components/Footer';
 import Media from './components/Media';
 import Community from './components/Community';
 import Support from './components/Support';
+import ScrollToTop from './components/ScrollToTop';
 import './App.css';
 
 // Component for the Home Page content
@@ -20,6 +21,7 @@ const Home = () => (
 function App() {
     return (
         <div className="App">
+            <ScrollToTop />
             <Navbar />
             <main>
                 <Routes>
