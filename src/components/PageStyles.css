@@ -29,6 +29,18 @@
     color: var(--color-accent-teal);
 }
 
+@media (max-width: 768px) {
+    .page-header h1 {
+        font-size: 2.5rem;
+        word-break: break-word;
+        /* Ensure it wraps if it's still too long, though 2.5rem should fit */
+    }
+
+    .page-header p {
+        font-size: 1.1rem;
+    }
+}
+
 /* Media Page */
 .media-section {
     max-width: 1200px;
