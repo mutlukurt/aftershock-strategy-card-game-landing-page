@@ -126,6 +126,10 @@
     overflow: hidden;
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
     cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
+    -webkit-user-select: none;
+    outline: none;
     transition: transform 0.3s ease;
 }
 

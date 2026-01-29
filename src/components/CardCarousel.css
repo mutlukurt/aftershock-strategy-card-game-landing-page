@@ -28,6 +28,10 @@
     border-radius: 15px;
     overflow: hidden;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
+    -webkit-user-select: none;
+    outline: none;
     /* Use offset for fanning effect */
     transform:
         translateX(calc(var(--offset) * 120px)) scale(calc(1 - var(--abs-offset) * 0.1)) translateZ(calc(var(--abs-offset) * -50px)) rotateY(calc(var(--offset) * -5deg));
