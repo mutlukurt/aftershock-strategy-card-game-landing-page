@@ -2,6 +2,12 @@
 
 A premium, immersive landing page for **Aftershock**, a next-generation fantasy strategy card game. Built with modern web technologies and a dark, high-fantasy aesthetic.
 
+<p align="center">
+  <a href="https://aftershock-strategy-card-game-landi.vercel.app/" target="_blank">
+    <img src="https://img.shields.io/badge/🌐_Live_Demo-Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Live Demo" />
+  </a>
+</p>
+
 ![Vite](https://img.shields.io/badge/Vite-6.0.5-646CFF?logo=vite&logoColor=white)
 ![React](https://img.shields.io/badge/React-19.0.0-61DAFB?logo=react&logoColor=white)
 ![React Router](https://img.shields.io/badge/React_Router-7.13.0-CA4245?logo=reactrouter&logoColor=white)
