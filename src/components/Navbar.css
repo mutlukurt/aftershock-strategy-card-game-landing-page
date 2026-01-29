@@ -26,10 +26,18 @@
     padding: 0 2rem;
 }
 
+.navbar-logo a {
+    display: block;
+    /* Ensure the link covers the image properly */
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+}
+
 .navbar-logo img {
     height: 50px;
     filter: drop-shadow(0 0 10px rgba(0, 210, 180, 0.5));
     transition: transform 0.3s ease;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .navbar-logo img:hover {
