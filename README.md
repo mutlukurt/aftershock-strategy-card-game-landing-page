@@ -15,6 +15,14 @@ A premium, immersive landing page for **Aftershock**, a next-generation fantasy 
 
 ---
 
+## 📱 Previews
+
+| **Desktop** | **Tablet** | **Mobile** |
+|:---:|:---:|:---:|
+| ![Desktop](src/assets/preview-1920x1080.png) | ![Tablet](src/assets/preview-1024x768.png) | ![Mobile](src/assets/preview-375x812.png) |
+
+---
+
 ## ✨ Features
 
 ### Pages
