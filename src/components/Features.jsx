@@ -7,6 +7,7 @@ import cardAir from '../assets/card_air.png';
 import cardLightning from '../assets/card_lightning.png';
 import cardNecro from '../assets/card_necro.png';
 import cardMystic from '../assets/card_mystic.png';
+import gameplayImg from '../assets/gameplay.png';
 import './Features.css';
 
 const cardsData = [
@@ -50,7 +51,7 @@ const Features = () => {
             <section className="feature-section alt-layout" id="gameplay">
                 <div className="feature-image" data-aos="fade-right">
                     <div className="image-frame-video">
-                        <img src="/src/assets/gameplay.png" alt="Gameplay Map" />
+                        <img src={gameplayImg} alt="Gameplay Map" />
                         <div className="play-icon">▶</div>
                     </div>
                 </div>
