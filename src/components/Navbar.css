@@ -1,0 +1,111 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 20px 0;
+    transition: all 0.4s ease;
+    border-bottom: 1px solid transparent;
+}
+
+.navbar.scrolled {
+    background: rgba(10, 16, 20, 0.95);
+    backdrop-filter: blur(10px);
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+}
+
+.navbar-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.navbar-logo img {
+    height: 50px;
+    filter: drop-shadow(0 0 10px rgba(0, 210, 180, 0.5));
+    transition: transform 0.3s ease;
+}
+
+.navbar-logo img:hover {
+    transform: scale(1.05);
+}
+
+.navbar-links {
+    display: flex;
+    gap: 3rem;
+}
+
+.navbar-links a {
+    font-family: var(--font-heading);
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    color: var(--color-text-muted);
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.navbar-links a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--color-accent-teal);
+    transition: width 0.3s ease;
+}
+
+.navbar-links a:hover {
+    color: var(--color-text-main);
+}
+
+.navbar-links a:hover::after {
+    width: 100%;
+}
+
+.navbar-actions {
+    display: flex;
+    gap: 1rem;
+}
+
+.mobile-toggle {
+    display: none;
+    cursor: pointer;
+    color: var(--color-text-main);
+}
+
+@media (max-width: 968px) {
+    .navbar-links {
+        position: fixed;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+        background: var(--color-primary-dark);
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        transition: height 0.3s ease;
+    }
+
+    .navbar-links.active {
+        height: 300px;
+        padding: 2rem 0;
+    }
+
+    .navbar-actions {
+        display: none;
+    }
+
+    .mobile-toggle {
+        display: block;
+    }
+}
